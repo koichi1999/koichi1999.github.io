@@ -5,10 +5,17 @@
     margin-bottom: 50px;
   }
 
+  .lesson-wrapper {
+    height: 990px;
+  }
+
   footer {
     text-align: center;
   }
 
+}
+
+@media all and (max-width: 750px) {
   .top-wrapper h1 {
     font-size: 32px;
   }
@@ -16,12 +23,19 @@
   .heading h2 {
     font-size: 20px;
   }
+
 }
 
 /* スマホ向けレイアウト */
 @media all and (max-width: 670px) {
-  .lesson {
-    width: 100%;
+  /* header-rightクラスのdisplayをnoneに指定してください */
+  .header-right {
+    display: none;
+  }
+  
+  /* menu-iconクラスのdisplayをblockに指定してください  */
+  .menu-icon {
+    display: block;
   }
 
   .btn {
@@ -36,16 +50,6 @@
     text-align: left;
   }
 
-  /* header-rightクラスのdisplayをnoneに指定してください */
-  .header-right {
-    display: none;
-  }
-  
-  /* menu-iconクラスのdisplayをblockに指定してください  */
-  .menu-icon {
-    display: block;
-  }
-  
   .top-wrapper h1 {
     font-size: 24px;
   }
@@ -53,4 +57,13 @@
   .top-wrapper p {
     font-size: 14px;
   }
+
+  .lesson {
+    width: 100%;
+  }
+  
+  .lesson-wrapper {
+    height: 1700px;
+  }
+  
 }
